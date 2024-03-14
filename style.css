@@ -5,13 +5,219 @@
     box-sizing: border-box;
 }
 body{
-    background: #080808;
-    color: #fff;
+    background: black;
+    color: azure;
 }
+------header------
 #header{
     width: 100%;
-    height: 100vh;
-    background-image: url(assets/blue.jpg);
+    min-height: 500px;
+    background-image: url("/assets/back2.jpg");
     background-size: cover;
     background-position: center;
 }
+.box-header{
+    padding: 12px 12px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    margin-left: 1100px;
+}
+nav ul li{
+    list-style: none;
+    margin: 12px 12px;
+    margin-left: 50px;
+    float: right;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #59f6fc;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.25s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.logo{
+    margin: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo img{
+    width: 200%;
+    height: 100%;
+}
+.header-text{
+    font-family:'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-shadow: 6x 6px 6px #aaa;
+    margin-top: 0;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.header-text p{
+
+}
+.header-text h1{
+    font-size: 70px;
+    font-weight: 600px;
+    color: #59f6fc;
+    text-shadow: 6x 6px 6px #aaa;
+    margin-top: 10px;
+    -webkit-box-reflect: below -15px linear-gradient(transparent, rgba(0,0,0,.2));
+}
+.header-text h1 span{
+    font-size: 400px;
+    color: #ee9b00;
+}
+/* -----about----- */
+#about{
+    padding: 80px 0;
+    color: rgb(247, 247, 247);
+    margin-top: 1200px;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col_1{
+    flex-basis: 35%;
+}
+.col_1 img{
+    width: 100%;
+    border-radius: 30px;
+}
+.col_2{
+    flex-basis: 55%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sub-heading{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(6, 197, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*.......services........*/
+#services{
+    padding: 30px 0;
+    color: rgb(247, 247, 247);
+}
+.services-list{
+    display: flex;
+    grid-template-columns: repeat(auto-fit , minmax (250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(0, 183, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 12px;
+    font-weight: 300;
+    border-radius: 20px;
+    transition: background-color 0.5s, transform 0.5s;
+
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+.services-list div:hover{
+background: #00b9b0;
+transform: translateY(-13px);
+}
+
+/*------projects-------------*/
+#projects{
+    padding: 50px 0;
+}
+.work-list{
+    display: flex;
+    grid-template-columns: repeat(auto-fit , minmax (250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.layer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), #59f6fc);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+}
+----------contact-----------
+#contact{
+    padding: 50px 0;
+    margin-top: 10000px;
+}
+    
+
+   
+

@@ -4,24 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
+    <div id="Header">
+        <div class="box-header">
             <nav>
-                <img src="assets/logos.jpg">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#header">Home</a></li>
                 </ul>
             </nav>
+            <div class="logo">
+                <img src="assets/logos.png" alt="logo">
+            </div>
+            <div class="header-text">
+                <p>Full-Stack Developer</p>
+                <h1>Hey there! I'm<br>
+                    <span>ABBY</span>
+                    <br>Your Favorite Pixel Poet</h1>
+            </div>
         </div>
-
-
     </div>
+
+    <!-----about----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col_1">
+                    <img src="assets/abzy.jpg" alt="Me">
+                </div>
+                    <div class="col_2">
+                        <h1 class="sub-title">About Me</h1>
+                        <h3 class="sub-heading">Who am I?</h3>
+                        <p>Hey there! I am Abby, a pixel wizard and a code conjurer based in Nairobi, Kenya.I am very passionate about learning new 
+                            technologies and developing new projects. I really enjoy turning complex problems into simple, beautiful and 
+                            responsive web interface designs by crafting digital experience from concept to code. </p>
+                            <h3 class="sub-heading">My Journey?</h3>
+                            <p>From tinkering with my first line of code to architecting robust web applications, my journey as a full-stack software 
+                                engineer has been nothing short of exhilarating.My journey began with HTML and CSS, the modest canoe on the vast code 
+                                ocean. At first, the new content and rules of coding were overwhelming but with practice, prayer, resilience and constant 
+                                reassuarance from my family, I finally got the hang of things. Over time, I upgraded to sturdier vessels: JavaScript, Python
+                                and Bootsrap. I now steer projects with top notch confidence, weaving front-end sails and back-end anchors.
+                                <h3 class="sub-heading">Mission?</h3>
+                                <ul>
+                                    <li>Creating user-centric software solutions that enhance people's lives</li>
+                                    <li>To build seamless digital experiences</li>
+                                    <li>Solving real-world problems through code</li>
+                                    <li>Architecting robust and scalable systems</li>
+                                    <li>Promoting best practices, reducing technical debt and elevate the quality of software</li>
+                                </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!---------services----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+               <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>UI/UX Design</h2>
+                <p>I design and build visually appealing interfaces that users interact
+                    with using HTML, CSS, and JavaScript.</p>
+                    <a href="#">Learn More</a>
+               </div>
+               <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>I create APIs (Application Programming Interfaces)  that allow communication between 
+                    different parts of an application or between different application servers</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Management</h2>
+                    <p>This entails handling of server-side programming, managing databases and handling
+                        requests from the Front-End.</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-unity"></i>
+                    <h2>Collaboration & Problem-Solving</h2>
+                    <p>I collaborate with designers, product managers, and other team members to deliver 
+                        high-quality software and also troubleshoot issues.</p>
+                        <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------projects----------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/work1.jpg">
+                    <div class="layer">
+                        <h3>Creative Showcase</h3>
+                        <p>These are the websites I have built for various companies and my own brand of work</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/work2.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>An app that facilitates the sharing of ideas and information among its users</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="work">
+                    <img src="assets/work3.jpg">
+                    <div class="layer">
+                        <h3>Mobile Banking App</h3>
+                        <p>An app that allows its users to access bank services and perform transactions remotely</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="work">
+                    <img src="assets/work2.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>An app that facilitates the sharing of ideas and information among its users</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------contact----------->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="contact-form">
+                <p>Email:<br><a href="https://mail.google.com/mail/u/0/#inbox">sarahabby541@gmail.com</a></p>
+                <p>Phone:<br>+254 719 209 074</p>
+                <p>Social Media</p>
+            </div>
+        </div>
+    </div>
+    <!---------footer----------->
+
+       
+            
+                 
+                    
+                   
+                          
+                    
     
 </body>
 </html>
