@@ -1,23 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-</head>
+    <script src="https://kit.fontawesome.com/c3d0b246eb.js" crossorigin="anonymous"></script>
+
+  </head>
 <body>
-    <div id="Header">
+    <section id="Header">
+    <div>
         <div class="box-header">
-            <nav>
-                <ul>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#header">Home</a></li>
-                </ul>
-            </nav>
+           <nav>
+            <ul>
+                 <li><a href="#contact">Contact</a></li>
+                 <li><a href="#projects">Projects</a></li>
+                 <li><a href="#services">Services</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#header">Home</a></li>
+            </ul>
+           </nav>
             <div class="logo">
                 <img src="assets/logos.png" alt="logo">
             </div>
@@ -29,9 +33,11 @@
             </div>
         </div>
     </div>
+</section> 
 
     <!-----about----->
-    <div id="about">
+    <section id="about">
+    <div>
         <div class="container">
             <div class="row">
                 <div class="col_1">
@@ -61,8 +67,11 @@
             </div>
         </div>
     </div>
+    </section>
+
     <!---------services----------->
-    <div id="services">
+    <section id="services">
+    <div>
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
@@ -71,81 +80,78 @@
                 <h2>UI/UX Design</h2>
                 <p>I design and build visually appealing interfaces that users interact
                     with using HTML, CSS, and JavaScript.</p>
-                    <a href="#">Learn More</a>
+                    
                </div>
                <div>
                 <i class="fa-brands fa-app-store"></i>
                 <h2>App Development</h2>
                 <p>I create APIs (Application Programming Interfaces)  that allow communication between 
                     different parts of an application or between different application servers</p>
-                    <a href="#">Learn More</a>
+                    
                 </div>
                 <div>
                     <i class="fa-solid fa-database"></i>
                     <h2>Database Management</h2>
                     <p>This entails handling of server-side programming, managing databases and handling
                         requests from the Front-End.</p>
-                        <a href="#">Learn More</a>
+                        
                 </div>
                 <div>
                     <i class="fa-brands fa-unity"></i>
                     <h2>Collaboration & Problem-Solving</h2>
                     <p>I collaborate with designers, product managers, and other team members to deliver 
                         high-quality software and also troubleshoot issues.</p>
-                        <a href="#">Learn More</a>
+                        
                 </div>
             </div>
         </div>
     </div>
+    </section>
+
     <!---------projects----------->
-    <div id="projects">
+    <section id="projects">
+    <div>
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="assets/work1.jpg">
                     <div class="layer">
-                        <h3>Creative Showcase</h3>
-                        <p>These are the websites I have built for various companies and my own brand of work</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3 class="txt">Creative Showcase</h3>
+                        <p class="txt">These are the websites I have built for various companies and my own brand of work</p>
                     </div>
                 </div>
                 <div class="work">
                     <img src="assets/work2.jpg">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>An app that facilitates the sharing of ideas and information among its users</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="work">
-                    <img src="assets/work3.jpg">
-                    <div class="layer">
-                        <h3>Mobile Banking App</h3>
-                        <p>An app that allows its users to access bank services and perform transactions remotely</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="work">
-                    <img src="assets/work2.jpg">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>An app that facilitates the sharing of ideas and information among its users</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3 class="txt">Social Media App</h3>
+                        <p class="txt">An app that facilitates the sharing of ideas and information among its users</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    </section>
+
     <!---------contact----------->
-    <div id="contact">
-        <div class="container">
+    <section id="contact">
+        <footer>
+    <div id="contact1">
+        <div class="cont">
             <h1 class="sub-title">Contact Me</h1>
-            <div class="contact-form">
-                <p>Email:<br><a href="https://mail.google.com/mail/u/0/#inbox">sarahabby541@gmail.com</a></p>
-                <p>Phone:<br>+254 719 209 074</p>
-                <p>Social Media</p>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></a></i>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></a></i>
+                <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></a></i>
+                <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></a></i>
+                <a href="https://www.snapchat.com/"><i class="fa-brands fa-square-snapchat"></a></i>
+                <a href=https://mail.google.com><i class="fa-solid fa-envelope"></a></i>
             </div>
         </div>
-    </div>
+        </footer>
+    </section>
+
     <!---------footer----------->
+
 
        
             

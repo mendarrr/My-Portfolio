@@ -52,10 +52,12 @@ nav ul li a::after{
 }
 nav ul li a:hover::after{
     width: 100%;
+    background-color:#59f6fc;
+    box-shadow: #00b9b0;
 }
 .logo{
     margin: 0%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -73,9 +75,6 @@ nav ul li a:hover::after{
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.header-text p{
-
-}
 .header-text h1{
     font-size: 70px;
     font-weight: 600px;
@@ -86,7 +85,17 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
     font-size: 400px;
-    color: #ee9b00;
+    color: transparent;
+    -webkit-text-stroke: 2px #b0fcff;
+    background: url(/assets/back.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 25s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 200% 0;
+    }
 }
 /* -----about----- */
 #about{
@@ -127,13 +136,14 @@ nav ul li a:hover::after{
 #services{
     padding: 30px 0;
     color: rgb(247, 247, 247);
+    
+
 }
 .services-list{
     display: flex;
     grid-template-columns: repeat(auto-fit , minmax (250px, 1fr));
-    gap: 40px;
-    margin-top: 50px;
-
+    gap: 45px;
+    margin-top: 45px;
 }
 .sub-title{
     font-size: 60px;
@@ -175,12 +185,15 @@ background: #00b9b0;
 transform: translateY(-13px);
 }
 
+
 /*------projects-------------*/
 #projects{
     padding: 50px 0;
 }
+
 .work-list{
     display: flex;
+    flex-wrap: nowrap;
     grid-template-columns: repeat(auto-fit , minmax (250px, 1fr));
     gap: 40px;
     margin-top: 50px;
@@ -194,30 +207,49 @@ transform: translateY(-13px);
     width: 100%;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-top: 0px;
+    
 }
 .layer{
-    position: relative;
+    position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0,0,0,0.6), #59f6fc);
     border-radius: 15px;
     overflow: hidden;
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     padding: 0 40px;
     text-align: center;
 }
-----------contact-----------
+.txt{
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ----------contact----------- */
 #contact{
-    padding: 50px 0;
-    margin-top: 10000px;
+    /* padding: 50px 0; */
+    padding-left: 50px 0;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.cont{
+  justify-content: space-between;
+  display: inline-block;
+  margin-left: 20px;
+}
+.cont i{
+    font-size: 100px;
+    border-radius: 50%;
+    padding: 40px;
 }
     
+---------footer---------
 
    
 
